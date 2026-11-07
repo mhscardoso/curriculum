@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        ARTICLE TEMPLATE
+        1. Copy this file to a new .html file in this folder.
+        2. Replace the title, description, date, reading time and body.
+        3. Add an entry to index.html in this folder.
+        4. Remove the noindex meta tag before publishing.
+
+        Write the body inside <article class="prose">. The stylesheet
+        already handles headings, paragraphs, lists, quotes, code,
+        tables, images and horizontal rules.
+    -->
+
+    <title>Article title — Matheus Cardoso</title>
+    <meta name="description" content="A short description of the article.">
+    <meta name="author" content="Matheus Cardoso">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1a1a'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='600' fill='%23fcfcfa' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="articles">
+    <div class="container">
+        <div data-component="header"></div>
+
+        <main id="main">
+            <article class="prose">
+                <header class="page-header">
+                    <p class="eyebrow">Data engineering</p>
+                    <h1>Article title</h1>
+                    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · 6 min read</p>
+                </header>
+
+                <p>Open with the problem in one or two sentences. Say what was hard, surprising or worth writing down.</p>
+
+                <h2>A section heading</h2>
+                <p>Ordinary paragraphs. Use <code>inline code</code> for commands, paths or identifiers, and <a href="../about.html">links</a> where they help.</p>
+
+                <ul>
+                    <li>A bullet for a list of points.</li>
+                    <li>Another point.</li>
+                </ul>
+
+                <blockquote>
+                    <p>A short quote or a sentence worth setting apart.</p>
+                </blockquote>
+
+                <h3>A subsection</h3>
+                <pre><code>SELECT day, count(*)
+FROM events
+WHERE day &gt;= current_date - 7
+GROUP BY day;</code></pre>
+
+                <p>Close with what you would do differently, or what to read next.</p>
+
+                <footer class="article-footer">
+                    <p><a href="./index.html">← All articles</a></p>
+                </footer>
+            </article>
+        </main>
+
+        <div data-component="footer"></div>
+    </div>
+
+    <script src="../main.js" defer></script>
+</body>
+</html>

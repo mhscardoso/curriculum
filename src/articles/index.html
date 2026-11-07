@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Articles — Matheus Cardoso</title>
+    <meta name="description" content="Notes on data engineering, backend systems, cloud infrastructure and reliability.">
+    <meta name="author" content="Matheus Cardoso">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1a1a'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='600' fill='%23fcfcfa' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="articles">
+    <div class="container">
+        <div data-component="header"></div>
+
+        <main id="main">
+            <header class="page-header">
+                <h1>Articles</h1>
+                <p class="lede">Notes on data engineering, backend systems, cloud infrastructure and reliability — mostly things I had to work out for myself.</p>
+            </header>
+
+            <!--
+                TO PUBLISH AN ARTICLE
+                1. Copy article-template.html to a new file in this folder.
+                2. Edit the title, date, summary and body.
+                3. Add a <article class="post"> block to the list below,
+                   newest first, and link it to the new file.
+                4. Remove the empty-state paragraph once the first article exists.
+            -->
+
+            <div class="post-list">
+                <!-- <p class="empty-state">No articles yet. The first one is being written.</p> -->
+
+                
+                <article class="post">
+                    <h2><a href="./typst.html">Typst. A new LaTeX era.</a></h2>
+                    <p class="meta"><time datetime="2026-11-06">19 Fev 2026</time> · 6 min read</p>
+                    <p>How typst is changing the way we write academic documents.</p>
+                </article>
+
+            </div>
+        </main>
+
+        <div data-component="footer"></div>
+    </div>
+
+    <script src="../main.js" defer></script>
+</body>
+</html>

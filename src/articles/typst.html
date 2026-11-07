@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        ARTICLE TEMPLATE
+        1. Copy this file to a new .html file in this folder.
+        2. Replace the title, description, date, reading time and body.
+        3. Add an entry to index.html in this folder.
+        4. Remove the noindex meta tag before publishing.
+
+        Write the body inside <article class="prose">. The stylesheet
+        already handles headings, paragraphs, lists, quotes, code,
+        tables, images and horizontal rules.
+    -->
+
+    <title>Article title — Matheus Cardoso</title>
+    <meta name="description" content="A short description of the article.">
+    <meta name="author" content="Matheus Cardoso">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1a1a'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='600' fill='%23fcfcfa' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="articles">
+    <div class="container">
+        <div data-component="header"></div>
+
+        <main id="main">
+            <article class="prose">
+                <header class="page-header">
+                    <p class="eyebrow">Academic writing</p>
+                    <h1>Typst. A new LaTeX era.</h1>
+                    <p class="meta"><time datetime="2026-11-06">19 Fev 2026</time> · 6 min read</p>
+                </header>
+
+                    <p>
+                        When I started in college - computer engineering - one of
+                        my first classes was <strong>Mathematical Logic</strong>.
+                    </p>
+
+                    <p>
+                        I had a very good teacher who unfortunally doesn't teach
+                        in my university anymore. And of course I won't say his/her
+                        name here. But, let's call this person <q>Bottle</q>.
+                    </p>
+
+                    <p>
+                        It was online because a terrible virus from China, but it is
+                        a topic for other article.
+                    </p>
+
+                    <p>
+                        What metters here is that this professor presented me a new tool
+                        called LaTeX. And it was awesome.
+                    </p>
+
+                    <p>
+                        As a windows user, I searched and downloaded MikTex, which is a great
+                        tool as I was a begginer (but is also good for non begginers).
+                        For me, it was a Word killer!!!
+                    </p>
+
+                    <p>
+                        At this point, pause and reflect that I was too young. Killing word 
+                        is like killing Microsoft!
+                    </p>
+
+                    <p>
+                        In my academic live I have always using LaTeX for my homework productions.
+                        Sometimes it looks ok, but others it was just a stubbornness of my part!
+                        (I learned a new english word! Stubbornness.)
+                    </p>
+
+                    <p>
+                        For example, for homeworks I could (and should obviously) write by hand
+                        and scan with a smartphone I decided to write a LaTeX. But then the work
+                        scales to drawing graphs (an many of them), which obligated me to learn
+                        <strong>Tikz</strong>. Ok, it's cool to learn it, but when you have small
+                        deadlines, it's like to learn how to sum today when you have an Calculus 
+                        test tomorrow. And, in the half of work, when all my collegues had done 
+                        I asked: "WTF am I doing?"
+                    </p>
+
+                    <p>
+                        So, before we start, look carefully for the tool you are using (or trying).
+                        Please, ask yourself: "Is this the most efficient way to achieve
+                        my goals?" or I'm just looking for problems or trying to be
+                        different of everyone because it's cool. I had better opportunities,
+                        even with homeworks, to write in LaTeX, as you also will (or Typst!).
+                    </p>
+
+                    <p>
+                        With that said, let's to the point.
+                        <a href="https://typst.app/docs/">Typst</a>
+                        The link goes to the documentation of this amazing tool for creating 
+                        beautiful PDFs. In the same way I never use Overleaf (ok, for search only)
+                        I like using typst locally.
+                    </p>
+
+                    <p>
+                        If you came from LaTeX, you must be used to some old tools
+                        which sometimes looks like a computer virus. Here you may 
+                        have some difficulties too, but I judge there are less
+                        frictions.
+                    </p>
+
+                    <p>
+                        At first you need <strong>RUST</strong>. Yes, but you don't 
+                        need to know how to program in this strange language. Just install
+                        it. I won't put any link here. You have Google!
+                    </p>
+
+                    <p>
+                        After install Rust, you need the Typst codebase (yes, it's open
+                        source). The source is <a href="https://github.com/typst/typst">here</a>.
+                        So, just a <span class="typst">git clone https://github.com/typst/typst</span>
+                        works fine.
+                    </p>
+
+                    <p>
+                        Now, you build it! In the README.md has instructions. I suppose
+                        you know how to read! RTFM!
+                    </p>
+
+                    <p>
+                        Congratulations! You have the executable file. Now
+                        you can add to your env vars or do whaterer you want.
+                        I'm here to present you the typst.
+                    </p>
+
+                    <p>
+                        I personally call it "the LaTeX of 21 century" because
+                        it is! It makes write an academic essay like write a README.md
+                        file. You can add graphs, figures, and more, without import 
+                        many and many libraries, because it's native. Also, it generates
+                        small pdfs.
+                    </p>
+
+                    <p>
+                        Take a look at a code example!
+                    </p>
+
+<pre><code>#text(font: "New Computer Modern")[
+    = Background
+    In the case of glaciers, fluid
+    dynamics principles can be used
+    to understand how the movement
+    and behaviour of the ice is
+    influenced by factors such as
+    temperature, pressure, and the
+    presence of other fluids (such as
+    water).
+]</code></pre>
+
+                <p>
+                    Yes! Just these lines of code works!
+                </p>
+
+                <p>
+                    You don't need a "Preamble" or anytyng like that.
+                    It's just there, for your use and joy!
+                </p>
+
+                <p>
+                    The <span class="typst">=</span> sign indicates 
+                    a new title. How many equals signs, lower the title will 
+                    be.
+                </p>
+
+                <p>
+                    I invite you to discover more.
+                    They also have an Overleaf like platform. Enter the documents
+                    and see if it interest you.
+                </p>
+
+                <footer class="article-footer">
+                    <p><a href="./index.html">← All articles</a></p>
+                </footer>
+            </article>
+        </main>
+
+        <div data-component="footer"></div>
+    </div>
+
+    <script src="../main.js" defer></script>
+</body>
+</html>
